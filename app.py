@@ -32,11 +32,11 @@ def makeWebhookResult(req):
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
-    class = parameters.get("Class")
+    subject = parameters.get("Class")
 
     scu = {'CG':6, 'AI':4, 'FDB':4}
 
-    speech = "The scu of " + class + " is " + str(scu) + "."
+    speech = "The scu of " + subject + " is " + str(scu) + "."
 
     print("Response:")
     print(speech)
