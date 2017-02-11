@@ -36,7 +36,7 @@ def makeWebhookResult(req):
 
     scu = {'CG':6, 'AI':4, 'FDB':4}
 
-    speech = "The scu of " + subject + " is " + str(scu) + "."
+    speech = "The scu of " + subject + " is " + str(scu[subject]) + "."
 
     print("Response:")
     print(speech)
